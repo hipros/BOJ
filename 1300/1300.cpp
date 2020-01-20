@@ -2,10 +2,10 @@
 using namespace std;
 
 int main() {
-    int s = 1, e = 2e9, ans;
+    int s, e, ans;
     int N, K, seq;
-    cin >> N ;
-    cin >> K;
+    scanf("%d %d", &N, &K);
+    s = 1; e = K;
 
     while (s<=e) {
         int m = (s + e) / 2;
@@ -19,6 +19,6 @@ int main() {
         }
     }
 
-    cout << ans << '\n';
+    printf("%d", ans);
     return 0;
 }
